@@ -1,0 +1,150 @@
+/*Colour scheme implemented with good contrast for easier readability.
+box shadow added to header to add depth and make it stand out.
+Hover effect added to the buttons to make them more visually interesting.
+Space increased between elements to make the design feel more open and spacious.*/
+
+
+
+body {
+  padding: 20px;
+  margin: 0;
+  height: 400px;
+  width: 350px;
+  background-color: #F5F5F5;
+  font-family: Arial, sans-serif;
+  /*picked this font for greater readability, 
+  distracted backgrounds avoided also (BDA 2023) */
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #FFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+#time {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+#btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+#time-option-container { 
+  display: block;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#time-input-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+#time-option {
+  font-size: 16px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#time-container label {
+  margin-right: 20px;
+}
+
+#save-btn{
+  display: block;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#btn-container > button {
+  color: #FFF;
+  background-color: #333;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-weight: bold;
+  width: 120px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-container > button:hover {
+  background-color: #666;
+}
+
+.input-container {
+  display: block;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+#task-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px; 
+  font-size: 18px; 
+}
+
+.task-input {
+  outline: none;
+  border: 2px solid #333;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.task-delete {
+  outline: none;
+  border: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color: #FFF;
+  background-color: #333;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.task-delete:hover {
+  background-color: #666;
+}

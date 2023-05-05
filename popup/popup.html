@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popup.css" />
+    <title>Your Pomodoro Pal</title>
+  </head>
+  <body>
+    <div class="header">
+        <h1>Your Pomodoro Pal</h1>
+    </div>
+    <h1 id="time">00:00</h1>
+    <div id="btn-container">
+      <button id="start-timer-btn">Start Timer</button>
+      <button id="reset-timer-btn">Reset Timer</button>
+      <button id="add-task-btn">Add Task</button>
+    </div>
+      <div id="time-option-container"></div>
+      <div id="time-input-container"></div>
+      <div class="input-container"></div>
+      <label>
+        <h2>Pick a Time in Minutes (1 - 60):</h2>
+        <input id="time-option" type="number" min="1" max="60" value="25" />
+      </label>
+    </div>
+  <div>
+      <!--Allow the user to choose their designated times 
+        for more control and less anxiety in terms of sites limits (BoIA 2022).-->
+      <button id="save-btn">Save New Time</button>
+    </div>
+    <div>
+    </body>
+  </html>
+    </div>
+    <div id="task-container"></div>
+  </body>
+  <script src="popup.js"></script>
+</html>
